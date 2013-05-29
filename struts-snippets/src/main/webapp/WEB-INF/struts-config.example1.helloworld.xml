@@ -7,20 +7,11 @@
 
     <form-beans>
         <form-bean name="helloWorldForm" type="example1.helloworld.model.HelloWorldForm" />
-        <form-bean name="registerForm" type="example2.registration.model.RegisterForm" />
     </form-beans>
 
     <action-mappings>
         <action path="/hello" name="helloWorldForm" type="example1.helloworld.controller.HelloWorldAction"> 
             <forward name="helloUser" path="/WEB-INF/example1/helloworld/view/helloworld.jsp"/> 
         </action> 
-    
-        <action path="/welcome" type="example2.registration.controller.WelcomeAction">
-            <forward name="welcomeUser" path="/WEB-INF/example2/registration/view/welcome.jsp" />
-        </action>
-        <action path="/register" name="registerForm" type="example2.registration.controller.RegisterAction">
-            <forward name="success" path="/WEB-INF/example2/registration/view/success.jsp" />
-            <forward name="failure" path="/WEB-INF/example2/registration/view/failure.jsp" />
-        </action>     
     </action-mappings>
 </struts-config>

@@ -8,7 +8,10 @@
         <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
         <init-param>
           <param-name>config</param-name>
-          <param-value>/WEB-INF/struts-config.xml</param-value>
+          <param-value>
+            /WEB-INF/struts-config.example1.helloworld.xml,
+            /WEB-INF/struts-config.example2.registration.xml
+          </param-value>
         </init-param>
     </servlet>
     <servlet-mapping>
