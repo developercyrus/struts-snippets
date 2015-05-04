@@ -1,9 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     
     <!-- 
-        1) run "mvn jetty:run"
-    
-     -->
+        1) run
+        	a) "mvn jetty:run"                      //with property set
+        	b) "mvn jetty:run -Djetty.port=9999"	//runtime with port set 
+        
+        2) access http://localhost:8080
+    -->
     
     
     <properties>
@@ -89,6 +92,12 @@
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-runner</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-util</artifactId>
             <version>${jetty.version}</version>
         </dependency>
         
