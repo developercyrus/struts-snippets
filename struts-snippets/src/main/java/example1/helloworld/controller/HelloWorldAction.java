@@ -22,7 +22,7 @@ public class HelloWorldAction extends Action {
             hwForm.setMessage("Hello World, " + username);
         }
         else {
-            hwForm.setMessage("Hello World, nobody");
+            hwForm.setMessage("Hello World");
         }
 
         return mapping.findForward("helloUser");
